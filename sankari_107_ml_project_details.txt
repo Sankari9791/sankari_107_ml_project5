@@ -1,0 +1,49 @@
+Calories Burnt Prediction Project:
+Details of the datasets:
+1. In this project, we have 2 datasets. One contains calories and another contains [User_ID, Gender, Age, Height, Weight, Duration, Heart_Rate, Body_Temp].
+1.1 we analyzed, what happens when we exercise.
+1.2 the body temperature will increase during the exercise.
+1.3 How many calories are burnt during the exercise that is what we are going to predict by this model.
+1.4 Heart rate is the indirect measurement of that person doing exercises how much time?
+2. Workflow:
+
+ data sets----> Data preprocessing ------> Data Analysis-----> Train test split----->XGBoostRegressor ---->Evaluation
+
+3. Importing the dependencies
+
+4. Data collection and preprocessing:
+4.1 load the two datasets. (exercise and calorie datasets)
+4.2 Combine the two datasets by concatenation method.
+4.3 Check the shape of the dataset.
+4.4 getting some basic information about the dataset.
+4.5 Checking for missing values.
+
+5. Data Analysis:
+5.1 Getting some basic statistical measures about the dataset.
+5.2 People who do exercise Agewise minimum 20 to 79.
+5.3 People who do exercise Heightwise minimum of 123 to 222
+5.4 People who do exercise weigh a minimum of 36 to 132
+5.5 People who do exercise duration minimum 1min to 30min
+5.6 People who do exercise Heart_rate minimum 67 to 128
+5.7 People who do exercise body_temp minimum 37 to 41
+
+6. Visualization of the Analysis:
+6.1 distribution of the gender column for analyzing the comparsion of data points for male and female
+6.2 distribution of age column
+6.3 distribution of duration column
+6.4 compare the duration and calories column
+6.5 compare the body temperature and calories column
+6.6 find the correlation in the dataset
+6.7 constructing the heatmap to understand the correlation
+
+7. splitting from data into feature data and targeted data
+
+8. splitting the data for train and test.
+
+9. model training:XGBoostRegressor
+
+10. Predict the test data by absolute mean error: 1.4833678883314132. This is a very good value which very close to the y_test.
+
+11. make the predictive system to predict the "calories burnt"
+
+
